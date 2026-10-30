@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X, ChevronLeft, ChevronRight, Camera, MapPin, Calendar, Maximize2 } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function Lightbox({ item, items = [], onClose, onSelect }) {
   if (!item) return null;
@@ -31,104 +31,77 @@ export default function Lightbox({ item, items = [], onClose, onSelect }) {
   return (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md p-4 md:p-8 animate-fadeIn"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-sm p-4 md:p-8 animate-fadeIn"
     >
-      {/* Top controls */}
-      <div className="absolute top-6 left-8 right-8 flex items-center justify-between text-white/70 z-20">
-        <div className="flex items-center space-x-3 text-xs tracking-[0.2em] uppercase font-mono">
-          <span>PLATE {currentIndex >= 0 ? String(currentIndex + 1).padStart(2, '0') : '01'}</span>
-          <span>/</span>
-          <span>{String(items.length).padStart(2, '0')}</span>
-          <span className="hidden sm:inline-block ml-4 text-white/40">[{item.category || 'ARCHIVAL STUDY'}]</span>
-        </div>
-
+      {/* Minimal Top Close & Index */}
+      <div className="absolute top-6 left-6 right-6 flex items-center justify-between text-white/50 text-xs font-mono">
+        <span>
+          {currentIndex >= 0 ? String(currentIndex + 1).padStart(2, '0') : '01'} / {String(items.length).padStart(2, '0')}
+        </span>
         <button
           onClick={onClose}
-          className="p-2 rounded-full border border-white/20 hover:border-white text-white/80 hover:text-white transition-colors cursor-pointer"
+          className="p-2 text-white/70 hover:text-white transition-colors cursor-pointer"
+          aria-label="Close"
         >
           <X className="w-5 h-5" />
         </button>
       </div>
 
-      {/* Prev button */}
+      {/* Prev Navigation */}
       {hasPrev && (
         <button
           onClick={handlePrev}
-          className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-black/40 border border-white/20 hover:border-white text-white/80 hover:text-white transition-all cursor-pointer z-20"
+          className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 p-2 text-white/40 hover:text-white transition-colors cursor-pointer"
+          aria-label="Previous"
         >
-          <ChevronLeft className="w-6 h-6" />
+          <ChevronLeft className="w-7 h-7" />
         </button>
       )}
 
-      {/* Next button */}
+      {/* Next Navigation */}
       {hasNext && (
         <button
           onClick={handleNext}
-          className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-black/40 border border-white/20 hover:border-white text-white/80 hover:text-white transition-all cursor-pointer z-20"
+          className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 p-2 text-white/40 hover:text-white transition-colors cursor-pointer"
+          aria-label="Next"
         >
-          <ChevronRight className="w-6 h-6" />
+          <ChevronRight className="w-7 h-7" />
         </button>
       )}
 
-      {/* Main Content Modal */}
+      {/* Clean, Simple Image & Caption Container */}
       <div
         onClick={(e) => e.stopPropagation()}
-        className="max-w-5xl w-full max-h-[85vh] flex flex-col md:flex-row bg-[#161514] border border-white/10 rounded-sm overflow-hidden shadow-2xl"
+        className="max-w-4xl w-full flex flex-col items-center text-center space-y-4"
       >
-        {/* Photo Container */}
-        <div className="md:w-3/5 bg-black flex items-center justify-center p-2 relative group overflow-hidden">
+        <div className="relative max-h-[72vh] overflow-hidden flex items-center justify-center">
           <img
             src={item.image}
             alt={item.title}
-            className="max-h-[60vh] md:max-h-[80vh] w-auto max-w-full object-contain mx-auto"
+            className="max-h-[72vh] w-auto max-w-full object-contain rounded-sm shadow-2xl"
           />
         </div>
 
-        {/* Archival metadata sidebar */}
-        <div className="md:w-2/5 p-6 md:p-8 flex flex-col justify-between border-t md:border-t-0 md:border-l border-white/10 text-[#E8E6E3] overflow-y-auto">
-          <div>
-            <div className="text-[10px] uppercase font-mono tracking-[0.25em] text-[#C29B38] mb-2">
-              {item.category || 'EXHIBITION SPECIMEN'}
-            </div>
-            <h3 className="font-masthead text-2xl md:text-3xl font-light text-white leading-tight mb-4">
-              {item.title}
-            </h3>
-
-            {item.curatorNote && (
-              <p className="font-editorial italic text-base text-neutral-300 mb-6 leading-relaxed border-l-2 border-[#C29B38]/60 pl-3">
-                "{item.curatorNote}"
-              </p>
-            )}
-
-            <div className="space-y-3 font-mono text-xs border-t border-white/10 pt-4 text-neutral-400">
-              {item.location && (
-                <div className="flex items-center space-x-2">
-                  <MapPin className="w-3.5 h-3.5 text-neutral-500" />
-                  <span>LOCATION: {item.location}</span>
-                </div>
-              )}
-              {item.year && (
-                <div className="flex items-center space-x-2">
-                  <Calendar className="w-3.5 h-3.5 text-neutral-500" />
-                  <span>CHRONO: {item.year}</span>
-                </div>
-              )}
-              {item.camera && (
-                <div className="flex items-center space-x-2">
-                  <Camera className="w-3.5 h-3.5 text-neutral-500" />
-                  <span>STACK / TOOLS: {item.camera}</span>
-                </div>
-              )}
-            </div>
+        {/* Clean, Simple Typography Details */}
+        <div className="space-y-1 max-w-2xl px-4">
+          <div className="text-[10px] font-mono tracking-[0.25em] uppercase text-[#C29B38]">
+            {item.category}
           </div>
-
-          <div className="pt-6 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-neutral-500">
-            <span>SABBIR AHMED // SOFTWARE ENGINEER</span>
-            <span>SOFTROVER &middot; UIU</span>
-          </div>
+          <h3 className="font-masthead text-xl md:text-2xl font-light text-white tracking-wide">
+            {item.title}
+          </h3>
+          {item.curatorNote && (
+            <p className="font-editorial italic text-sm md:text-base text-neutral-300">
+              "{item.curatorNote}"
+            </p>
+          )}
+          {item.camera && (
+            <div className="pt-2 text-xs font-mono text-neutral-400">
+              {item.camera}
+            </div>
+          )}
         </div>
       </div>
     </div>
   );
 }
-
