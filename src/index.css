@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cream: #FAF8F5;
+    --bg-cream-card: #F3EFE9;
+    --bg-dark: #121110;
+    --text-primary: #1A1816;
+    --text-muted: #736E67;
+    --border-editorial: rgba(26, 24, 22, 0.12);
+    --border-dark: rgba(255, 255, 255, 0.15);
+    --accent-red: #B93826;
+    --accent-gold: #C29B38;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #FAF8F5;
+    color: #1A1816;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Luxury Editorial Typography utilities */
+.font-masthead {
+  font-family: 'Bodoni Moda', 'Playfair Display', Georgia, serif;
+  font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+.font-editorial {
+  font-family: 'Cormorant Garamond', Garamond, Georgia, serif;
+}
+
+.font-display {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.15em;
+}
+
+.font-italiana {
+  font-family: 'Italiana', serif;
+}
+
+.font-news {
+  font-family: 'Newsreader', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Hairline borders like printed editorial issues */
+.border-editorial {
+  border-color: rgba(26, 24, 22, 0.14);
+}
+
+.border-editorial-dark {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+/* Subtle newspaper / linen grain */
+.bg-grain {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom fine-line scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C7C2BA;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8E8980;
+}
+
+/* Image framing animations */
+.editorial-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.editorial-img-wrap img {
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
+}
+
+.editorial-img-wrap:hover img {
+  transform: scale(1.035);
+}
+
+/* Text balance and drop cap */
+.drop-cap::first-letter {
+  font-family: 'Bodoni Moda', serif;
+  float: left;
+  font-size: 4.8rem;
+  line-height: 0.85;
+  padding-top: 4px;
+  padding-right: 14px;
+  padding-bottom: 4px;
+  color: #1A1816;
+  font-weight: 500;
+}
