@@ -1,50 +1,62 @@
-# SABBIR AHMED — Personal Editorial Monograph & Digital Journal
+<div align="center">
 
-A bespoke personal editorial portfolio and digital publication built with React, Vite, and Tailwind CSS. Designed with a luxury magazine aesthetic, high-contrast Bodoni & Cormorant Garamond typography, analog audio soundscape, and zero generic AI boilerplate.
+# SABBIR AHMED
 
----
+**Software Engineer @ [Softrover](https://softrover.com) · Computer Science Student @ United International University (UIU)**  
+*Dhaka, Bangladesh*
 
-## 📖 Key Pages Included
-- **01. Cover (`/#cover`):** Editorial hero carousel, 3-panel triptych spread, running dispatches ticker, and studio metrics.
-- **02. Journal (`/#journal`):** High-fashion digital journal with bilingual pull quotes, drop caps, reader controls (font size & serif toggle), and reflection counters.
-- **03. Archive (`/#archive`):** Visual works repository with 3 view modes: **Editorial Spread**, **Curator's Grid**, and **35mm Kodak Portra Contact Sheet**, plus full-screen archival Lightbox.
-- **04. Profile (`/#dossier`):** Comprehensive dossier containing the Three Tenets Manifesto, Curated Personal Canon, Chronological Epochs, and Media Archives.
-- **05. Contact (`/#correspondence`):** Watermarked stationery letterhead with interactive seal-and-dispatch confirmation, tracking register, and studio coordinates.
+<br/>
 
----
+> *"Good software is like good architecture: invisible in its complexity, deliberate in its restraint, and enduring in its craft."*
 
-## 🛠️ Tech Stack
-- **Framework:** React 19 + Vite 8
-- **Styling:** Tailwind CSS v4 + Google Editorial Fonts (*Bodoni Moda*, *Cormorant Garamond*, *Italiana*, *Newsreader*, *Plus Jakarta Sans*)
-- **Icons:** Lucide React
-- **Audio:** Web Audio API native analog ambiance generator (zero external audio dependencies)
+<br/>
+
+[![Personal Site](https://img.shields.io/badge/PORTFOLIO-LIVE_SITE-121110?style=for-the-badge&logoColor=white)](https://github.com/sabbirOG/personal)
+[![GitHub](https://img.shields.io/badge/GITHUB-sabbirOG-121110?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sabbirOG)
+[![Location](https://img.shields.io/badge/BASE-DHAKA%2C%20BANGLADESH-121110?style=for-the-badge)](https://github.com/sabbirOG)
+
+</div>
 
 ---
 
-## 🚀 Getting Started
+### ✦ Overview
 
-### Installation
-```bash
-npm install
+I am a Software Engineer based in Dhaka, currently engineering scalable systems and digital platforms at **Softrover**, while pursuing my undergraduate degree in Computer Science at **United International University (UIU)**.
+
+My focus centers on architecting resilient backend services, high-performance web applications, and intuitive interfaces with an emphasis on code cleanliness, developer empathy, and lasting reliability.
+
+---
+
+### ✦ Core Stack & Competencies
+
 ```
-
-### Development Server
-```bash
-npm run dev
-```
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-### Production Build
-```bash
-npm run build
+Languages       ::   TypeScript · JavaScript · Python · Go
+Frontend        ::   React · Next.js · Tailwind CSS · Modern Web Standards
+Backend & DB    ::   Node.js · Express · PostgreSQL · MongoDB · REST APIs
+Infrastructure  ::   Docker · Git & GitHub Workflows · Linux · CI/CD Pipelines
 ```
 
 ---
 
-## 🖼️ Customizing Images & Text
-- **Text & Metadata:** Edit `src/data/content.js` to change titles, quotes, articles, and coordinates.
-- **Photos:** Simply drop your own photos into `public/placeholders/` or update the file paths in `src/data/content.js`.
+### ✦ Areas of Focus
+
+* **Production Engineering:** Delivering high-throughput, maintainable software at Softrover.
+* **Computer Science Foundations:** Deepening algorithmic analysis, operating systems, and distributed systems at UIU.
+* **Minimalist Design & UX:** Crafting bespoke digital artifacts with high-taste typography, negative space, and performance.
 
 ---
 
-© 2026 Sabbir Ahmed Archive. All Rights Reserved.
+### ✦ Digital Monograph
+
+This repository hosts the source code for my personal editorial monograph:
+* **Cover (`/#cover`):** Dynamic dispatches, engineering perspectives, and real-time dual clock (Dhaka 12h / International UTC 24h).
+* **Journal (`/#journal`):** Technical essays on software craft, system complexity, and balancing academia with production.
+* **Archive (`/#archive`):** Interactive project repository with 3 view modes (Editorial Spread, Curator Grid, and 35mm Contact Sheet).
+* **Profile (`/#dossier`):** Comprehensive engineering curriculum vitae, tenets of clean architecture, and technical canon.
+* **Contact (`/#correspondence`):** Direct communication desk.
+
+---
+
+<div align="center">
+<sub>© 2026 SABBIR AHMED · CRAFTED WITH RESTRAINT</sub>
+</div>
