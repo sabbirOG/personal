@@ -52,18 +52,22 @@ export default function DossierPage({ onOpenLightbox }) {
               {DOSSIER_DATA.biography}
             </p>
 
-            <div className="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-black/10 dark:border-white/10 font-mono text-xs text-neutral-500">
+            <div className="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-black/10 dark:border-white/10 font-mono text-xs text-neutral-500">
               <div>
-                <span className="block text-[10px] uppercase text-neutral-400">RESIDENCES</span>
-                <span className="text-neutral-800 dark:text-neutral-200">Dhaka & London</span>
+                <span className="block text-[10px] uppercase text-neutral-400">ROLE</span>
+                <span className="text-neutral-800 dark:text-neutral-200">Software Engineer</span>
               </div>
               <div>
-                <span className="block text-[10px] uppercase text-neutral-400">DISCIPLINE</span>
-                <span className="text-neutral-800 dark:text-neutral-200">Design & Technology</span>
+                <span className="block text-[10px] uppercase text-neutral-400">COMPANY</span>
+                <span className="text-neutral-800 dark:text-neutral-200">Softrover</span>
               </div>
               <div>
-                <span className="block text-[10px] uppercase text-neutral-400">FOCUS</span>
-                <span className="text-neutral-800 dark:text-neutral-200">Digital Architecture</span>
+                <span className="block text-[10px] uppercase text-neutral-400">UNIVERSITY</span>
+                <span className="text-neutral-800 dark:text-neutral-200">UIU (Student)</span>
+              </div>
+              <div>
+                <span className="block text-[10px] uppercase text-neutral-400">LOCATION</span>
+                <span className="text-neutral-800 dark:text-neutral-200">Dhaka, Bangladesh</span>
               </div>
             </div>
           </div>

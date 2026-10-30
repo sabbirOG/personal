@@ -134,10 +134,10 @@ export default function CorrespondencePage() {
                         onChange={(e) => setFormData({ ...formData, purpose: e.target.value })}
                         className="w-full bg-black/[0.02] dark:bg-white/[0.04] border-b border-black/20 dark:border-white/20 py-2 px-1 text-sm font-news focus:outline-none focus:border-[#B93826] transition-colors cursor-pointer"
                       >
-                        <option value="Design & Architecture Collaboration">Design & Architecture Collaboration</option>
-                        <option value="Creative Advisory & Consulting">Creative Advisory & Consulting</option>
-                        <option value="Press & Official Inquiries">Press & Official Inquiries</option>
-                        <option value="Personal Note">Confidential Personal Note</option>
+                        <option value="Software Engineering & Architecture">Software Engineering & Architecture</option>
+                        <option value="Softrover Product Collaboration">Softrover Product Collaboration</option>
+                        <option value="UIU Academic Research & Projects">UIU Academic Research & Projects</option>
+                        <option value="General Connect & Networking">General Connect & Networking</option>
                       </select>
                     </div>
                   </div>
@@ -226,26 +226,26 @@ export default function CorrespondencePage() {
             {/* Studio Coordinates */}
             <div className="border border-black/10 dark:border-white/10 p-6 bg-[#FAF8F5] dark:bg-[#141312] space-y-4">
               <div className="text-[10px] font-mono tracking-[0.25em] uppercase text-[#B93826]">
-                STUDIO LOCATIONS
+                PRIMARY COORDINATES
               </div>
 
               <div className="space-y-4 text-xs font-mono text-neutral-600 dark:text-neutral-400">
                 <div className="border-b border-black/5 dark:border-white/5 pb-3">
-                  <div className="font-bold text-neutral-800 dark:text-neutral-200">DHAKA (PRINCIPAL STUDIO)</div>
-                  <p className="mt-1">Gulshan Concourse</p>
-                  <p>Dhaka, Bangladesh</p>
+                  <div className="font-bold text-neutral-800 dark:text-neutral-200">DHAKA, BANGLADESH</div>
+                  <p className="mt-1">Softrover Engineering Desk</p>
+                  <p>United International University (UIU)</p>
                 </div>
 
                 <div className="border-b border-black/5 dark:border-white/5 pb-3">
-                  <div className="font-bold text-neutral-800 dark:text-neutral-200">LONDON RESIDENCE</div>
-                  <p className="mt-1">Mayfair</p>
-                  <p>London W1K, United Kingdom</p>
+                  <div className="font-bold text-neutral-800 dark:text-neutral-200">AVAILABILITY</div>
+                  <p className="mt-1">Full-Stack & Systems Engineering</p>
+                  <p>Open Source & Technical Collaborations</p>
                 </div>
 
                 <div>
-                  <div className="font-bold text-neutral-800 dark:text-neutral-200">NEW YORK RESIDENCE</div>
-                  <p className="mt-1">Tribeca</p>
-                  <p>New York, NY 10013, United States</p>
+                  <div className="font-bold text-neutral-800 dark:text-neutral-200">TIMEZONE</div>
+                  <p className="mt-1">BST (GMT+6) · Dhaka</p>
+                  <p>Flexible for Global Async Work</p>
                 </div>
               </div>
             </div>

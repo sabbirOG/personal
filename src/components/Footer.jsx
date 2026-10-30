@@ -18,8 +18,8 @@ export default function Footer({ setActivePage }) {
           >
             {SITE_META.name}
           </h2>
-          <p className="text-[10px] font-mono tracking-[0.3em] uppercase text-neutral-400">
-            {SITE_META.location}
+          <p className="text-[10px] font-mono tracking-[0.25em] uppercase text-neutral-500">
+            SOFTWARE ENGINEER @ SOFTROVER · STUDENT @ UIU
           </p>
         </div>
 

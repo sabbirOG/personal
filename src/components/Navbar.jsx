@@ -103,10 +103,12 @@ export default function Navbar({ activePage, setActivePage, isDarkMode, setIsDar
           {SITE_META.name}
         </h1>
 
-        <div className="flex items-center justify-center space-x-3 text-[10px] md:text-xs tracking-[0.25em] font-editorial italic text-neutral-600 dark:text-neutral-400 mt-2">
+        <div className="flex items-center justify-center flex-wrap gap-2 text-[10px] md:text-xs tracking-[0.25em] font-editorial italic text-neutral-600 dark:text-neutral-400 mt-2">
           <span>{SITE_META.subTitleMonogram}</span>
           <span>·</span>
-          <span>EST. {SITE_META.established}</span>
+          <span>SOFTROVER</span>
+          <span>·</span>
+          <span>UIU</span>
           <span>·</span>
           <span>{SITE_META.location}</span>
         </div>

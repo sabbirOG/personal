@@ -137,13 +137,13 @@ export default function CoverPage({ setActivePage, onOpenLightbox }) {
       <div className="bg-[#1A1816] text-[#FAF8F5] py-2.5 px-4 overflow-hidden border-b border-black/20">
         <div className="flex items-center space-x-8 text-[11px] font-mono tracking-[0.25em] whitespace-nowrap animate-pulse">
           <span className="text-[#C29B38] font-bold">DISPATCH:</span>
-          <span>SPECIAL MONOGRAPH EDITION · AUTUMN/WINTER</span>
+          <span>SOFTWARE ENGINEER @ SOFTROVER</span>
           <span className="text-neutral-500">///</span>
-          <span>FEATURING THE ARCHITECTURAL AND VISUAL ARCHIVE OF SABBIR AHMED</span>
+          <span>COMPUTER SCIENCE @ UNITED INTERNATIONAL UNIVERSITY (UIU)</span>
           <span className="text-neutral-500">///</span>
-          <span>STUDIO RETROSPECTIVE NOW OPEN</span>
+          <span>FULL-STACK ARCHITECTURE & SCALABLE SYSTEMS</span>
           <span className="text-neutral-500">///</span>
-          <span>DHAKA · LONDON · NEW YORK</span>
+          <span>DHAKA, BANGLADESH</span>
         </div>
       </div>
 
@@ -153,13 +153,13 @@ export default function CoverPage({ setActivePage, onOpenLightbox }) {
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <div className="text-[10px] font-mono tracking-[0.3em] uppercase text-[#B93826]">
-              TRIPTYCH COMPOSITION
+              ENGINEERING PERSPECTIVES
             </div>
             <h3 className="font-masthead text-3xl md:text-4xl font-light tracking-tight">
-              Velocity, Presence & Classical Lines
+              Production, Academia & Systems
             </h3>
             <p className="font-editorial text-neutral-600 dark:text-neutral-400 italic text-base">
-              A continuous three-part study in contemporary masculinity and architectural heritage.
+              A continuous study across production engineering at Softrover, computer science at UIU, and developer craft.
             </p>
           </div>
 
@@ -224,21 +224,21 @@ export default function CoverPage({ setActivePage, onOpenLightbox }) {
             {/* Left text column with Thai script inspired directly by reference 2 */}
             <div className="lg:col-span-5 space-y-6">
               <div className="text-[10px] font-mono tracking-[0.3em] uppercase text-[#B93826]">
-                CULTURAL MONOGRAPH · ESSAY
+                SOFTWARE ENGINEERING & CRAFT
               </div>
               <h3 className="font-masthead text-3xl sm:text-4xl font-light leading-tight">
-                "Craft and independence are the currency of lasting work."
+                "Good software is invisible in its complexity and enduring in its craft."
               </h3>
               <p className="font-editorial italic text-xl text-neutral-700 dark:text-neutral-300">
-                Youth and independent creators are the living architects of our cultural present.
+                Bridging foundational computer science with real-world production velocity.
               </p>
 
               <div className="font-news text-sm leading-relaxed text-neutral-600 dark:text-neutral-400 space-y-4 border-t border-black/10 dark:border-white/10 pt-4">
                 <p>
-                  As explored in the Dialogue Cultural Monograph, Sabbir Ahmed’s studio initiatives foster independent designers, vernacular architects, and experimental digital craftspeople.
+                  As a Software Engineer at Softrover and an undergraduate student at United International University (UIU), Sabbir Ahmed designs and implements high-throughput web architectures, dependable backend logic, and clean user interfaces.
                 </p>
                 <p>
-                  “The highest obligation of building is not preservation through isolation, but opening avenues of expression that honor authentic human touch.”
+                  “The highest discipline in engineering is not adding more complexity, but distilling problems until the resulting code is intuitive, maintainable, and resilient.”
                 </p>
               </div>
 
@@ -283,43 +283,43 @@ export default function CoverPage({ setActivePage, onOpenLightbox }) {
         </div>
       </section>
 
-      {/* 5. Metrics & Scion Dossier Band */}
+      {/* 5. Metrics & Engineering Focus Band */}
       <section className="px-4 md:px-12 py-14 bg-[#1A1816] text-[#FAF8F5] border-b border-black/20">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="space-y-1">
-              <div className="font-masthead text-4xl md:text-5xl font-light text-[#C29B38]">
-                24+
+              <div className="font-masthead text-3xl sm:text-4xl md:text-5xl font-light text-[#C29B38]">
+                SOFTROVER
               </div>
               <div className="text-[10px] font-mono tracking-[0.25em] uppercase text-neutral-400">
-                Architectural Fellowships
+                Software Engineer
               </div>
             </div>
 
             <div className="space-y-1">
-              <div className="font-masthead text-4xl md:text-5xl font-light text-[#C29B38]">
-                04
+              <div className="font-masthead text-3xl sm:text-4xl md:text-5xl font-light text-[#C29B38]">
+                UIU
               </div>
               <div className="text-[10px] font-mono tracking-[0.25em] uppercase text-neutral-400">
-                Monograph Editions
+                Computer Science
               </div>
             </div>
 
             <div className="space-y-1">
-              <div className="font-masthead text-4xl md:text-5xl font-light text-[#C29B38]">
-                12 JUNE
+              <div className="font-masthead text-3xl sm:text-4xl md:text-5xl font-light text-[#C29B38]">
+                FULL-STACK
               </div>
               <div className="text-[10px] font-mono tracking-[0.25em] uppercase text-neutral-400">
-                Annual Monograph Day
+                Web & Cloud Systems
               </div>
             </div>
 
             <div className="space-y-1">
-              <div className="font-masthead text-4xl md:text-5xl font-light text-[#C29B38]">
-                03
+              <div className="font-masthead text-3xl sm:text-4xl md:text-5xl font-light text-[#C29B38]">
+                DHAKA
               </div>
               <div className="text-[10px] font-mono tracking-[0.25em] uppercase text-neutral-400">
-                Global Studio Residencies
+                Base Coordinates
               </div>
             </div>
           </div>
