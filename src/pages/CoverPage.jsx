@@ -248,41 +248,41 @@ export default function CoverPage({ setActivePage, onOpenLightbox }) {
       </section>
 
       {/* 5. Metrics & Engineering Focus Band */}
-      <section className="px-4 sm:px-6 md:px-12 py-10 sm:py-12 md:py-14 bg-[#1A1816] text-[#FAF8F5] border-b border-black/20">
+      <section className="px-4 sm:px-6 md:px-12 py-10 sm:py-12 md:py-14 bg-[#121110] text-[#FAF8F5] border-y border-white/10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
-            <div className="space-y-1">
-              <div className="font-masthead text-2xl sm:text-3xl md:text-5xl font-light text-[#C29B38]">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center divide-x-0 md:divide-x md:divide-white/10">
+            <div className="space-y-1.5 md:px-4">
+              <div className="font-tech text-xl sm:text-2xl md:text-3xl font-semibold tracking-wider text-white">
                 SOFTROVER
               </div>
-              <div className="text-[9px] sm:text-[10px] font-mono tracking-[0.2em] sm:tracking-[0.25em] uppercase text-neutral-400">
+              <div className="text-[10px] sm:text-[11px] font-mono tracking-[0.2em] uppercase text-neutral-400">
                 Software Engineer
               </div>
             </div>
 
-            <div className="space-y-1">
-              <div className="font-masthead text-2xl sm:text-3xl md:text-5xl font-light text-[#C29B38]">
+            <div className="space-y-1.5 md:px-4">
+              <div className="font-tech text-xl sm:text-2xl md:text-3xl font-semibold tracking-wider text-white">
                 UIU
               </div>
-              <div className="text-[9px] sm:text-[10px] font-mono tracking-[0.2em] sm:tracking-[0.25em] uppercase text-neutral-400">
+              <div className="text-[10px] sm:text-[11px] font-mono tracking-[0.2em] uppercase text-neutral-400">
                 Computer Science
               </div>
             </div>
 
-            <div className="space-y-1">
-              <div className="font-masthead text-2xl sm:text-3xl md:text-5xl font-light text-[#C29B38]">
+            <div className="space-y-1.5 md:px-4">
+              <div className="font-tech text-xl sm:text-2xl md:text-3xl font-semibold tracking-wider text-white">
                 FULL-STACK
               </div>
-              <div className="text-[9px] sm:text-[10px] font-mono tracking-[0.2em] sm:tracking-[0.25em] uppercase text-neutral-400">
+              <div className="text-[10px] sm:text-[11px] font-mono tracking-[0.2em] uppercase text-neutral-400">
                 Web & Cloud Systems
               </div>
             </div>
 
-            <div className="space-y-1">
-              <div className="font-masthead text-2xl sm:text-3xl md:text-5xl font-light text-[#C29B38]">
+            <div className="space-y-1.5 md:px-4">
+              <div className="font-tech text-xl sm:text-2xl md:text-3xl font-semibold tracking-wider text-white">
                 DHAKA
               </div>
-              <div className="text-[9px] sm:text-[10px] font-mono tracking-[0.2em] sm:tracking-[0.25em] uppercase text-neutral-400">
+              <div className="text-[10px] sm:text-[11px] font-mono tracking-[0.2em] uppercase text-neutral-400">
                 Base Coordinates
               </div>
             </div>
