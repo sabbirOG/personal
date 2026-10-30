@@ -67,7 +67,7 @@ export default function CoverPage({ setActivePage, onOpenLightbox }) {
                   onClick={() => setActivePage('journal')}
                   className="px-6 py-3 bg-[#1A1816] text-[#FAF8F5] dark:bg-[#FAF8F5] dark:text-[#1A1816] hover:bg-[#B93826] dark:hover:bg-[#B93826] dark:hover:text-white transition-all duration-300 text-xs font-mono tracking-[0.2em] uppercase flex items-center space-x-2 rounded-sm cursor-pointer shadow-sm group"
                 >
-                  <span>READ MONOGRAPH</span>
+                  <span>READ ARTICLE</span>
                   <MoveRight className="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" />
                 </button>
 
@@ -253,28 +253,28 @@ export default function CoverPage({ setActivePage, onOpenLightbox }) {
               </div>
             </div>
 
-            {/* Right: The dual-photo spread inspired directly by Reference 2 */}
+            {/* Right: The dual-photo spread */}
             <div className="lg:col-span-7">
               <div
                 onClick={() =>
                   onOpenLightbox({
                     id: "cultural-dialogue-plate",
-                    title: "Youth, Hope & Architecture",
+                    title: "Collaborative Engineering & UIU Lab Sessions",
                     image: "/placeholders/cultural-dialogue.jpg",
-                    category: "CULTURAL DISPATCH",
-                    curatorNote: "Archival print from the dialogue series on next-generation mentorship in Bangkok.",
-                    location: "Bangkok Cultural Compound",
+                    category: "ENGINEERING DISPATCH",
+                    curatorNote: "Interactive pair programming, code reviews, and system architecture planning in Dhaka.",
+                    location: "Softrover / UIU Labs",
                   })
                 }
                 className="editorial-img-wrap group cursor-pointer border border-black/10 dark:border-white/10 bg-black/5 p-2"
               >
                 <img
                   src="/placeholders/cultural-dialogue.jpg"
-                  alt="Cultural Dialogue Monograph"
+                  alt="Software Engineering Lab Sessions"
                   className="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-700"
                 />
                 <div className="p-3 text-[10px] font-mono text-neutral-400 flex justify-between items-center">
-                  <span>FIG 2.4 — WORKSHOP SESSIONS & ARCHITECTURAL DIALOGUES</span>
+                  <span>FIG 2.4 — WORKSHOP SESSIONS & SYSTEM DESIGN DISCUSSIONS</span>
                   <span className="text-[#C29B38] font-bold">CLICK TO INSPECT</span>
                 </div>
               </div>

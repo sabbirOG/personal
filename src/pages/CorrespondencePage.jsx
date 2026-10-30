@@ -7,7 +7,7 @@ export default function CorrespondencePage() {
     name: '',
     email: '',
     organization: '',
-    purpose: 'Architectural Commission',
+    purpose: 'Software Engineering & Architecture',
     message: '',
     priority: 'standard',
   });
@@ -19,7 +19,7 @@ export default function CorrespondencePage() {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
 
-    const randomId = 'AP-' + Math.floor(100000 + Math.random() * 900000);
+    const randomId = 'SA-' + Math.floor(100000 + Math.random() * 900000);
     setDispatchId(randomId);
     setSubmitted(true);
   };
@@ -29,7 +29,7 @@ export default function CorrespondencePage() {
       name: '',
       email: '',
       organization: '',
-      purpose: 'Architectural Commission',
+      purpose: 'Software Engineering & Architecture',
       message: '',
       priority: 'standard',
     });
@@ -43,13 +43,13 @@ export default function CorrespondencePage() {
       <section className="border-b border-black/10 dark:border-white/10 px-4 md:px-12 py-12 bg-[#FAF8F5] dark:bg-[#121110]">
         <div className="max-w-4xl mx-auto text-center space-y-3">
           <div className="text-[10px] font-mono tracking-[0.35em] uppercase text-[#B93826]">
-            DIRECT CORRESPONDENCE & INQUIRIES
+            DIRECT INQUIRIES & CONTACT
           </div>
           <h2 className="font-masthead text-4xl sm:text-6xl font-light text-[#1A1816] dark:text-[#FAF8F5]">
-            Letters & Inquiries
+            Get In Touch
           </h2>
           <p className="font-editorial italic text-lg text-neutral-600 dark:text-neutral-400 max-w-xl mx-auto">
-            Direct channel for creative collaborations, architectural advisory, and private correspondence.
+            Direct channel for software engineering collaborations, Softrover inquiries, and UIU academic projects.
           </p>
         </div>
       </section>

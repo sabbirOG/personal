@@ -116,15 +116,15 @@ export default function Lightbox({ item, items = [], onClose, onSelect }) {
               {item.camera && (
                 <div className="flex items-center space-x-2">
                   <Camera className="w-3.5 h-3.5 text-neutral-500" />
-                  <span>OPTICS: {item.camera}</span>
+                  <span>STACK / TOOLS: {item.camera}</span>
                 </div>
               )}
             </div>
           </div>
 
           <div className="pt-6 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-neutral-500">
-            <span>SABBIR AHMED MONOGRAPH COLL.</span>
-            <span>RESTRICTED ARCHIVE</span>
+            <span>SABBIR AHMED // SOFTWARE ENGINEER</span>
+            <span>SOFTROVER &middot; UIU</span>
           </div>
         </div>
       </div>

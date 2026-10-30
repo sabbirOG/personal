@@ -98,7 +98,7 @@ export default function Navbar({ activePage, setActivePage, isDarkMode, setIsDar
       {/* 2. Giant Editorial Masthead */}
       <div className="text-center py-6 md:py-9 px-4 border-b border-black/10 dark:border-white/10 relative overflow-hidden">
         <div className="text-[10px] md:text-xs font-mono uppercase tracking-[0.35em] text-neutral-500 dark:text-neutral-400 mb-2">
-          THE MONOGRAPH & DISPATCHES OF
+          PORTFOLIO & TECHNICAL DISPATCHES OF
         </div>
         
         <h1

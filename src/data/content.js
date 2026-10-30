@@ -1,177 +1,177 @@
 // ==============================================================================
-// EDITORIAL SITE CONTENT & MEDIA CONFIGURATION
+// SOFTWARE ENGINEER PORTFOLIO & JOURNAL DATA
 // ------------------------------------------------------------------------------
-// Sabbir Ahmed — Software Engineer @ Softrover | Student @ UIU
+// Sabbir Ahmed — Software Engineer @ Softrover | Student @ UIU (Dhaka)
 // ==============================================================================
 
 export const SITE_META = {
   name: "SABBIR AHMED",
   legalName: "Sabbir Ahmed",
   role: "Software Engineer @ Softrover",
-  education: "Student, United International University",
+  education: "Computer Science @ United International University (UIU)",
   subTitleMonogram: "S. AHMED // SOFTWARE ENGINEER",
   title: "Software Engineer @ Softrover · Student @ UIU",
-  issue: "VOLUME IV / DEV MONOGRAPH",
-  season: "AUTUMN / WINTER EDITION",
+  issue: "VOLUME IV / DEV JOURNAL",
+  season: "PRODUCTION & ACADEMIA",
   location: "DHAKA, BANGLADESH",
   company: "Softrover",
   university: "United International University",
   established: "2026",
-  quote: "Good software is like good architecture: invisible in its complexity, deliberate in its restraint, and enduring in its craft.",
+  quote: "Writing clean, maintainable software is about clarity of thought: solving complex engineering problems with simplicity, precision, and reliable code.",
 };
 
 export const NAVIGATION_LINKS = [
-  { id: "cover", label: "Cover", sublabel: "Overview" },
-  { id: "journal", label: "Journal", sublabel: "Engineering & Essays" },
-  { id: "archive", label: "Archive", sublabel: "Projects & Systems" },
-  { id: "dossier", label: "Profile", sublabel: "Career, UIU & Stack" },
+  { id: "cover", label: "Home", sublabel: "Overview" },
+  { id: "journal", label: "Articles", sublabel: "Engineering Insights" },
+  { id: "archive", label: "Projects", sublabel: "Systems & Code" },
+  { id: "dossier", label: "About", sublabel: "Experience & Stack" },
   { id: "correspondence", label: "Contact", sublabel: "Get in Touch" },
 ];
 
 export const HERO_STORIES = [
   {
     id: "story-1",
-    tag: "SOFTWARE ENGINEERING MONOGRAPH",
-    title: "The Architecture of Code & Quietude",
-    subtitle: "Reflections on system design, production engineering at Softrover, and the discipline of clean code.",
+    tag: "ENGINEERING FEATURE",
+    title: "Building Reliable Systems: The Software Engineer's Craft",
+    subtitle: "Insights on scalable web engineering at Softrover, distributed thinking, and writing maintainable codebases.",
     date: "OCTOBER 2026",
     readingTime: "5 MIN READ",
     image: "/placeholders/hero-quietude.jpg",
-    alt: "Engineer portrait study in natural window light",
-    quote: "Simplicity in software is not merely aesthetic; it is the ultimate measure of reliability and scalability.",
-    photographer: "Studio Archives",
+    alt: "Software engineer focus in modern workspace",
+    quote: "Simplicity in software is not merely aesthetic; it is the ultimate measure of reliability, testability, and team velocity.",
+    photographer: "Engineering Archives",
   },
   {
     id: "story-2",
-    tag: "FEATURE @ SOFTROVER",
-    title: "Engineering with Velocity: Building at Softrover",
-    subtitle: "A look into day-to-day software engineering, shipping robust features, and collaborative problem-solving.",
+    tag: "INSIDE SOFTROVER",
+    title: "High Velocity, Clean Code: Shipping at Softrover",
+    subtitle: "How our engineering team approaches production sprints, backend scalability, and resilient microservices.",
     date: "SEPTEMBER 2026",
     readingTime: "7 MIN READ",
     image: "/placeholders/hero-velocity.jpg",
-    alt: "Precision engineering and modern mechanical study",
-    quote: "Velocity without architecture is technical debt. Real momentum comes from building on clean foundations.",
-    photographer: "Softrover Engineering Journal",
+    alt: "Precision development and modern code workflow",
+    quote: "Speed without test coverage is just accumulating technical debt. Real momentum comes from clean, decoupled systems.",
+    photographer: "Softrover Tech Series",
   },
   {
     id: "story-3",
-    tag: "UIU ACADEMIA & PRACTICE",
-    title: "From Classroom Theory to Production Systems",
-    subtitle: "Balancing computer science studies at United International University with real-world engineering.",
+    tag: "UIU CS INSIGHTS",
+    title: "From Algorithmic Theory to Production Software",
+    subtitle: "Connecting rigorous computer science coursework at United International University with real-world industry delivery.",
     date: "JUNE 2026",
     readingTime: "4 MIN READ",
     image: "/placeholders/hero-monograph.jpg",
-    alt: "Minimalist workspace and engineering study",
-    quote: "Academia teaches you how algorithms think; production teaches you how real users behave.",
-    photographer: "UIU Campus & Studio",
+    alt: "Computer science research and workspace",
+    quote: "Academia provides the algorithmic mental models; production engineering teaches you resilience, latency, and real-world edge cases.",
+    photographer: "UIU Labs & Studio",
   },
 ];
 
 export const TRIPTYCH_SPREAD = [
   {
-    title: "Engineering",
-    subtitle: "Softrover Systems & Backend Craft",
-    description: "Architecting resilient APIs, scalable backend logic, and clean modern web platforms.",
+    title: "Backend & APIs",
+    subtitle: "Softrover Production Work",
+    description: "Designing RESTful services, database schemas, and caching layers that scale under concurrent load.",
     image: "/placeholders/triptych-velocity.jpg",
     aspect: "tall",
-    location: "Softrover HQ, Dhaka",
+    location: "Softrover Engineering, Dhaka",
   },
   {
-    title: "Academia",
+    title: "Computer Science",
     subtitle: "United International University",
-    description: "Deepening algorithmic knowledge, data structures, and foundational computer science at UIU.",
+    description: "Deepening theoretical knowledge in data structures, algorithms, operating systems, and network protocols.",
     image: "/placeholders/triptych-presence.jpg",
     aspect: "portrait",
     location: "UIU Campus, Dhaka",
   },
   {
-    title: "Exploration",
-    subtitle: "Modern Interfaces & Dev Tools",
-    description: "Constantly experimenting with developer ergonomics, performance optimizations, and open source.",
+    title: "Modern Frontend",
+    subtitle: "React, Next.js & UI Engineering",
+    description: "Building responsive, accessible web interfaces with clean component architectures and zero bloat.",
     image: "/placeholders/triptych-stroll.jpg",
     aspect: "tall",
-    location: "Studio Workspace",
+    location: "Personal Dev Workspace",
   },
 ];
 
 export const JOURNAL_ARTICLES = [
   {
     id: "article-1",
-    issue: "DEV JOURNAL NO. 18",
-    category: "ENGINEERING ESSAY",
-    title: "The Craft of Invisible Architecture: Notes from a Software Engineer",
-    subHeading: "In conversation with Sabbir Ahmed on building scalable systems at Softrover and studying at UIU.",
+    issue: "DEV INSIGHTS NO. 18",
+    category: "SYSTEM DESIGN",
+    title: "The Discipline of Clean Code: Lessons from Production Engineering",
+    subHeading: "Reflections from Sabbir Ahmed on shipping scalable features at Softrover and studying CS at UIU.",
     author: "Sabbir Ahmed",
     date: "Autumn 2026",
     readTime: "6 min read",
     heroImage: "/placeholders/architectural-skyline.jpg",
     secondaryImage: "/placeholders/hero-velocity.jpg",
-    excerpt: "Software engineering is often misunderstood as typing code fast. In truth, it is the quiet, deliberate process of understanding a problem so deeply that the solution becomes simple.",
-    pullQuote: "Good code explains itself; great architecture makes the hard parts look effortless.",
+    excerpt: "Software engineering is more than just making code work once. It is the practice of crafting systems that any engineer can understand, modify, and scale with confidence.",
+    pullQuote: "Good code explains itself; great system design makes complex business logic feel intuitive and maintainable.",
     sections: [
       {
-        heading: "I. The View from the Editor",
-        body: `Every morning at Softrover begins with a clean slate: tickets to review, systems to architect, and edge cases to untangle. Working as a software engineer teaches you quickly that code is read ten times more often than it is written.
+        heading: "I. The Production Mindset",
+        body: `Every sprint at Softrover begins with real business requirements: high-throughput APIs, database query optimization, and intuitive user workflows. As a software engineer, you quickly realize that code is read significantly more often than it is typed.
 
-When you write software, you are not communicating with a machine alone; you are communicating with your future teammates and your future self. That understanding changes how you structure functions, name variables, and design database schemas.`,
+When designing a backend service or a frontend state machine, your primary audience is fellow developers and your future self. That awareness shapes how you structure directories, manage errors, and document APIs.`,
       },
       {
-        heading: "II. Bridging UIU Computer Science and Industry",
-        body: `Studying at United International University (UIU) while engineering at Softrover offers an invaluable duality. In class, we dive into algorithm complexity, compiler design, and operating system internals. At Softrover, we face production deadlines, distributed latencies, and real user feedback.
+        heading: "II. Bridging UIU Computer Science and Real-World Delivery",
+        body: `Studying Computer Science at United International University (UIU) while simultaneously engineering at Softrover provides a strong practical feedback loop.
 
-The intersection is where true growth happens. Theory gives you the mental models to debug impossible bugs; production gives you the pragmatism to know when an 80% solution shipped today is better than perfection delayed for months.`,
+In the classroom, we analyze graph algorithms, time complexity, and memory management. At Softrover, we apply those fundamentals to optimize database query performance, debug race conditions, and minimize latency. The combination of strong theory and daily shipping turns abstract concepts into instinctive engineering judgment.`,
       },
       {
-        heading: "III. The Discipline of Restraint",
-        body: `It is easy to add another dependency, another microservice, or another layer of abstraction. The real challenge—and true senior craftsmanship—is knowing what to leave out.
+        heading: "III. Restraint Over Over-Engineering",
+        body: `It is tempting to adopt every trendy framework or introduce complex abstractions prematurely. Senior engineering, however, is about restraint: choosing boring, proven technologies that solve the actual problem with zero unnecessary complexity.
 
-At Softrover, we value systems that are maintainable, testable, and robust under pressure. That discipline of restraint is what separates fragile software from software that stands the test of time.`,
+At Softrover, we prioritize readability, unit test coverage, and clear boundaries between domain logic and external infrastructure.`,
       },
     ],
   },
   {
     id: "article-2",
-    issue: "STUDENT & BUILDER NO. 16",
-    category: "PERSONAL JOURNEY",
-    title: "The Two Desks: Life Between UIU Lectures and Softrover Sprints",
-    subHeading: "How balancing university studies and full-time software engineering sharpened my focus.",
+    issue: "DEV JOURNEY NO. 16",
+    category: "CAREER & GROWTH",
+    title: "Dual Focus: Balancing Full-Time Engineering and University Studies",
+    subHeading: "How managing Softrover client projects alongside university coursework builds deep focus.",
     author: "Sabbir Ahmed",
     date: "Summer 2026",
     readTime: "5 min read",
     heroImage: "/placeholders/lifestyle-morning.jpg",
     secondaryImage: "/placeholders/cultural-dialogue.jpg",
-    excerpt: "Balancing exams at United International University with production deployments at Softrover requires rigorous time management and deliberate focus.",
-    pullQuote: "Discipline is choosing between what you want now and what you want most.",
+    excerpt: "Managing production deployments at Softrover while preparing for exams at United International University requires intentional time-blocking and deliberate execution.",
+    pullQuote: "Consistency beats intensity. Making steady, focused progress on your codebase every day compounds dramatically over time.",
     sections: [
       {
-        heading: "I. The Morning Commute in Dhaka",
-        body: `Dhaka is a city that never stops moving. Navigating between morning classes at UIU's campus and the engineering desk at Softrover demands ruthless prioritization.
+        heading: "I. The Engineering Workflow",
+        body: `Balancing responsibilities between Softrover's development team and university group projects requires clear systems: keeping pull requests small and focused, automating CI checks, and communicating blockers early.
 
-You learn to make every block of time count: reading documentation during commutes, writing unit tests with focused intensity, and participating in university group projects with clear collaborative goals.`,
+Whether writing Node.js services or studying compiler theory, the approach remains the same: break large, overwhelming problems down into small, verifiable functions.`,
       },
       {
-        heading: "II. The Joy of Shipping",
-        body: `Nothing matches the sensation of seeing a feature you designed, coded, and reviewed go live to production. When users interact seamlessly with a product built at Softrover, the late-night debugging and academic exams all feel completely worthwhile.`,
+        heading: "II. The Satisfaction of Impact",
+        body: `There is a unique satisfaction in seeing a feature you researched, implemented, and tested being actively used in production by clients. It validates the long hours spent in the UIU labs and fuels my passion for building software that matters.`,
       },
     ],
   },
   {
     id: "article-3",
-    issue: "CODE ARCHITECTURE",
-    category: "TECHNICAL NOTES",
-    title: "Clean Systems, Minimalist Codebases, and Human Empathy",
-    subHeading: "Why empathy for other developers is the foundation of high-quality software.",
+    issue: "CODE PRINCIPLES",
+    category: "BEST PRACTICES",
+    title: "Empathy-Driven Engineering: Writing Code for Humans",
+    subHeading: "Why the most technical engineers are often the most empathetic communicators.",
     author: "Sabbir Ahmed",
     date: "June 2026",
     readTime: "4 min read",
     heroImage: "/placeholders/hero-monograph.jpg",
     secondaryImage: "/placeholders/triptych-presence.jpg",
-    excerpt: "The best software engineers are not the ones who write the most esoteric code; they are the ones who write code anyone on the team can understand in minutes.",
-    pullQuote: "Code is a craft of communication. Clear code is a sign of clear thought.",
+    excerpt: "Writing software is an inherently collaborative human craft. Great engineers write code that is welcoming, readable, and respectful of the next maintainer.",
+    pullQuote: "Write your code as if the next person maintaining it is a close colleague who will review it during an on-call rotation.",
     sections: [
       {
-        heading: "I. The Principle of Clarity",
-        body: `Clever code often breaks in production at 2 AM. Readable, predictable code endures. As I continue my journey as a software engineer at Softrover and a student at UIU, this principle guides every pull request: write code that welcomes the next reader with clarity.`,
+        heading: "I. The True Goal of Software Engineering",
+        body: `Clever, dense code that tries to show off usually leads to production bugs that are hard to diagnose. Clear, predictable code endures. At Softrover and in all my projects, I treat clarity as the non-negotiable metric of engineering excellence.`,
       },
     ],
   },
@@ -180,114 +180,114 @@ You learn to make every block of time count: reading documentation during commut
 export const ARCHIVE_WORKS = [
   {
     id: "arch-1",
-    title: "Softrover Enterprise Client Platform",
-    category: "Full-Stack & Backend",
+    title: "Softrover Full-Stack Client Platform",
+    category: "Web & Backend Systems",
     year: "2026",
     location: "Softrover, Dhaka",
     image: "/placeholders/architectural-skyline.jpg",
-    camera: "Production Engineering",
-    curatorNote: "Architected high-throughput REST APIs and scalable database schemas for core client solutions.",
+    camera: "TypeScript · Node.js · PostgreSQL",
+    curatorNote: "Architected high-throughput REST APIs, authentication flows, and relational database schemas for enterprise clients.",
   },
   {
     id: "arch-2",
-    title: "UIU Distributed Computing Study",
-    category: "Academic Research",
+    title: "UIU Distributed Systems & Algorithms",
+    category: "Computer Science",
     year: "2026",
     location: "UIU Labs",
     image: "/placeholders/triptych-velocity.jpg",
-    camera: "Computer Science Dept.",
-    curatorNote: "Exploration of concurrent algorithms, memory management, and asynchronous task scheduling.",
+    camera: "Python · C++ · Algorithms",
+    curatorNote: "Academic research and implementations of concurrent processing, memory management, and graph traversal algorithms.",
   },
   {
     id: "arch-3",
-    title: "Minimalist Developer Workspace",
-    category: "Ergonomics & Tools",
+    title: "Developer Productivity CLI & Tooling",
+    category: "Developer Tooling",
     year: "2026",
-    location: "Private Studio, Dhaka",
+    location: "Open Source / GitHub",
     image: "/placeholders/hero-monograph.jpg",
-    camera: "Workspace Setup",
-    curatorNote: "Curated mechanical keyboard, terminal-centric workflow, and distraction-free programming environment.",
+    camera: "Go · Shell · Node.js",
+    curatorNote: "Custom command-line utilities and automation scripts streamlining daily development environments and git flows.",
   },
   {
     id: "arch-4",
-    title: "Performance Optimization Sprint",
-    category: "Software Engineering",
+    title: "API Performance & Database Optimization",
+    category: "Backend Engineering",
     year: "2026",
     location: "Softrover",
     image: "/placeholders/lifestyle-morning.jpg",
-    camera: "Web Vitals & Latency",
-    curatorNote: "Refactored key database queries and bundle size, reducing page load latency by 45%.",
+    camera: "PostgreSQL · Redis · Docker",
+    curatorNote: "Refactored slow database queries, introduced indexing and Redis caching, slashing API response latency by over 40%.",
   },
   {
     id: "arch-5",
-    title: "Modern Design System & Component Library",
-    category: "Frontend Architecture",
+    title: "Design System & React Component Kit",
+    category: "Frontend Engineering",
     year: "2026",
     location: "Softrover",
     image: "/placeholders/hero-velocity.jpg",
-    camera: "React & Tailwind",
-    curatorNote: "Engineered accessible, reusable component primitives with zero layout shift and fluid responsiveness.",
+    camera: "React · TypeScript · Tailwind",
+    curatorNote: "Built modular, accessible UI component libraries with strict TypeScript typing, responsive layouts, and zero runtime bloat.",
   },
   {
     id: "arch-6",
-    title: "United International University Campus",
-    category: "Academic Journey",
+    title: "UIU Academic Projects & Lab Systems",
+    category: "University Projects",
     year: "2026",
     location: "UIU Campus, Dhaka",
     image: "/placeholders/triptych-stroll.jpg",
-    camera: "University Life",
-    curatorNote: "Lectures, lab sessions, and collaborative software engineering projects at UIU.",
+    camera: "Full-Stack Development",
+    curatorNote: "Collaborative software engineering semester projects, code reviews, and software testing presentations at UIU.",
   },
   {
     id: "arch-7",
-    title: "Open Source Utilities & Dev CLI",
+    title: "Open Source Contributions & Experiments",
     category: "Open Source",
     year: "2026",
     location: "GitHub",
     image: "/placeholders/cultural-dialogue.jpg",
-    camera: "Node.js & Go",
-    curatorNote: "Author of developer productivity scripts and automated workflow toolsets.",
+    camera: "Next.js · JavaScript · Git",
+    curatorNote: "Contributing to community libraries, experimenting with new web APIs, and building developer utility projects.",
   },
 ];
 
 export const DOSSIER_DATA = {
-  biography: `Sabbir Ahmed is a software engineer at Softrover and an undergraduate student at United International University (UIU) in Dhaka, Bangladesh. He specializes in designing and building scalable web applications, robust backend architectures, and high-performance user interfaces. Balancing theoretical computer science with real-world production engineering, he is dedicated to clean craftsmanship, intentional design, and continuous learning.`,
+  biography: `Sabbir Ahmed is a software engineer at Softrover and an undergraduate Computer Science student at United International University (UIU) in Dhaka, Bangladesh. He specializes in full-stack web engineering, resilient backend systems, and clean interface development. Balancing core computer science principles with high-velocity product delivery at Softrover, he builds software with a focus on maintainability, performance, and developer empathy.`,
   manifesto: [
     {
-      title: "I. Clean Architecture Over Complexity",
-      description: "Any engineer can make a system complicated. True senior engineering lies in distilling complex business requirements into simple, maintainable, and testable code.",
+      title: "I. Clean Systems Over Premature Complexity",
+      description: "Any engineer can write code a computer understands. Great engineers write code that humans can effortlessly maintain, test, and adapt as requirements evolve.",
     },
     {
-      title: "II. Production Reliability & Empathy",
-      description: "Every line of code impacts real users and fellow teammates. We build with thorough test suites, clear documentation, and empathy for whoever maintains the system next.",
+      title: "II. Production Reliability & Rigorous Testing",
+      description: "Writing code is only the first step. True engineering lies in defensive error handling, thorough unit testing, and building systems that perform dependably under load.",
     },
     {
-      title: "III. Continuous Academic & Practical Growth",
-      description: "Technology evolves rapidly. Bridging strong computer science fundamentals from UIU with hands-on production velocity at Softrover creates an unbreakable foundation.",
+      title: "III. Strong Fundamentals & Continuous Growth",
+      description: "Frameworks come and go. Grounding day-to-day engineering at Softrover in the core algorithmic and systems fundamentals taught at UIU ensures lasting technical excellence.",
     },
   ],
   canon: [
     { 
-      category: "Core Stack", 
-      items: ["JavaScript / TypeScript", "Python & Go", "React & Next.js", "Node.js & Express", "PostgreSQL & MongoDB"] 
+      category: "Languages & Core", 
+      items: ["TypeScript & JavaScript (ESNext)", "Python", "Go", "SQL (PostgreSQL)", "HTML5 & Modern CSS"] 
     },
     { 
-      category: "Engineering Tools", 
-      items: ["Git & GitHub Workflows", "Docker & Containerization", "Linux & Shell Scripting", "Postman & REST APIs", "Tailwind CSS & Modern UI"] 
+      category: "Frameworks & Backend", 
+      items: ["React & Next.js", "Node.js & Express", "Tailwind CSS", "RESTful API Architecture", "Redis & PostgreSQL"] 
     },
     { 
-      category: "Academia @ UIU", 
-      items: ["Data Structures & Algorithms", "Database Management Systems", "Object Oriented Programming", "Computer Networks & OS"] 
+      category: "Tools & DevOps", 
+      items: ["Git & GitHub Workflows", "Docker & Containerization", "Linux Environments", "Postman & API Testing", "Vite & Modern Bundlers"] 
     },
     { 
-      category: "Foundational Reading", 
-      items: ["Clean Architecture (Robert C. Martin)", "Designing Data-Intensive Applications", "The Pragmatic Programmer", "Refactoring (Martin Fowler)"] 
+      category: "Computer Science @ UIU", 
+      items: ["Data Structures & Algorithms", "Database Management Systems", "Object-Oriented Design", "Computer Networks & OS"] 
     },
   ],
   timeline: [
-    { year: "2023", event: "Enrolled in Computer Science at United International University (UIU), Dhaka." },
-    { year: "2024", event: "Engineered full-stack applications, distributed algorithms, and open source projects." },
-    { year: "2025", event: "Joined Softrover as Software Engineer, architecting client solutions and web platforms." },
-    { year: "2026", event: "Launched personal developer monograph, technical articles, and scalable software systems." },
+    { year: "2023", event: "Began Computer Science degree at United International University (UIU), Dhaka." },
+    { year: "2024", event: "Built full-stack web applications, deepened knowledge in data structures and algorithmic efficiency." },
+    { year: "2025", event: "Joined Softrover as Software Engineer, shipping production client features and robust API services." },
+    { year: "2026", event: "Engineered scalable web systems, technical dev articles, and modern developer portfolio." },
   ],
 };

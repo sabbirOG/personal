@@ -6,7 +6,7 @@ export default function ArchivePage({ onOpenLightbox }) {
   const [activeCategory, setActiveCategory] = useState('ALL');
   const [viewMode, setViewMode] = useState('editorial'); // 'editorial' | 'grid' | 'contact-sheet'
 
-  const categories = ['ALL', 'Campaign & Tailoring', 'Editorial Portrait', 'Architectural & Space', 'Personal Diary', 'Publication Design'];
+  const categories = ['ALL', 'Web & Backend Systems', 'Computer Science', 'Frontend Engineering', 'Developer Tooling', 'Open Source'];
 
   const filteredWorks =
     activeCategory === 'ALL'
@@ -20,13 +20,13 @@ export default function ArchivePage({ onOpenLightbox }) {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-3">
             <div className="text-[10px] font-mono tracking-[0.35em] uppercase text-[#B93826]">
-              VISUAL REPOSITORY & PLATES
+              SOFTWARE PROJECTS & SYSTEMS REPOSITORY
             </div>
             <h2 className="font-masthead text-4xl sm:text-6xl font-light text-[#1A1816] dark:text-[#FAF8F5]">
-              The Visual Archive
+              Projects & Engineering Archive
             </h2>
             <p className="font-editorial italic text-lg text-neutral-600 dark:text-neutral-400 max-w-xl">
-              Photographic monographs, bespoke tailoring campaigns, automotive commissions, and private diaries from 2021 to 2026.
+              Production web applications at Softrover, Computer Science research at UIU, developer toolsets, and open-source systems.
             </p>
           </div>
 

@@ -16,22 +16,22 @@ export default function DossierPage({ onOpenLightbox }) {
               onClick={() =>
                 onOpenLightbox({
                   id: "sabbir-portrait-dossier",
-                  title: "Personal Monograph Portrait Study",
+                  title: "Sabbir Ahmed — Software Engineer",
                   image: "/placeholders/dossier-portrait.jpg",
-                  category: "OFFICIAL DOSSIER PORTRAIT",
-                  curatorNote: "Standard editorial portrait for the personal cultural monograph series.",
-                  location: "Bangkok Studio",
+                  category: "ENGINEER PROFILE",
+                  curatorNote: "Sabbir Ahmed, Software Engineer at Softrover and CS Student at United International University.",
+                  location: "Dhaka, Bangladesh",
                 })
               }
               className="editorial-img-wrap group cursor-pointer border-2 border-black/15 dark:border-white/20 p-2 bg-black/5 dark:bg-white/5"
             >
               <img
                 src="/placeholders/dossier-portrait.jpg"
-                alt="Personal Monograph Study"
+                alt="Sabbir Ahmed Software Engineer"
                 className="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-700"
               />
               <div className="p-2 text-[10px] font-mono text-center text-neutral-500 border-t border-black/10 dark:border-white/10 mt-2">
-                DOSSIER SPECIMEN // MONOGRAPH NO. 01
+                PROFILE SPECIMEN // ENG NO. 01
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@ export default function DossierPage({ onOpenLightbox }) {
           {/* Dossier Monograph Details */}
           <div className="md:col-span-8 space-y-4">
             <div className="text-[10px] font-mono tracking-[0.3em] uppercase text-[#B93826]">
-              PERSONA MONOGRAPH · CURRICULUM VITAE
+              ENGINEERING DOSSIER · CURRICULUM VITAE
             </div>
             <h2 className="font-masthead text-4xl sm:text-6xl font-light text-[#1A1816] dark:text-[#FAF8F5]">
               {SITE_META.legalName}
@@ -225,23 +225,23 @@ export default function DossierPage({ onOpenLightbox }) {
             <div className="space-y-6">
               {[
                 {
-                  pub: "EXCLUSIVE FEATURE",
-                  title: "Velocity, Modern Stewardship & Preservation",
-                  desc: "A wide-ranging cover profile on automotive architecture, modern stewardship, and heritage preservation.",
+                  pub: "SOFTROVER TECH JOURNAL",
+                  title: "Engineering Scalable Web Systems at Softrover",
+                  desc: "A deep dive into backend microservices, database performance, and team engineering practices.",
                   date: "September 2026",
                   image: "/placeholders/hero-velocity.jpg",
                 },
                 {
-                  pub: "DIALOGUE JOURNAL",
-                  title: "Cover Feature: The Silence of the Skyline",
-                  desc: "An introspective conversation high above the city examining solitude and duty.",
+                  pub: "DEV DIALOGUE",
+                  title: "The Craft of Clean Code: Notes from an Engineer",
+                  desc: "Balancing computer science theory at UIU with daily production sprints and resilient web delivery.",
                   date: "Autumn 2026",
                   image: "/placeholders/architectural-skyline.jpg",
                 },
                 {
-                  pub: "MONOGRAPH BILLBOARD ARCHIVE",
-                  title: "12 June Birthday Dedication Monograph",
-                  desc: "The annual city-wide cultural portrait commemorating the personal monograph.",
+                  pub: "UIU TECH CHRONICLE",
+                  title: "Student Spotlight: Software Engineering in Practice",
+                  desc: "Reflections on undergraduate computer science research, open source toolsets, and professional growth.",
                   date: "June 2026",
                   image: "/placeholders/hero-monograph.jpg",
                 },
