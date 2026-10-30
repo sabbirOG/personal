@@ -22,7 +22,7 @@ export default function Navbar({ activePage, setActivePage, isDarkMode, setIsDar
         }).format(now);
         setTime(`DHAKA : ${timeStr}`);
       } else {
-        // International UTC time 24-hour format
+        // International 24-hour format
         const timeStr = new Intl.DateTimeFormat('en-GB', {
           timeZone: 'UTC',
           hour: '2-digit',
@@ -30,7 +30,7 @@ export default function Navbar({ activePage, setActivePage, isDarkMode, setIsDar
           second: '2-digit',
           hour12: false,
         }).format(now);
-        setTime(`UTC / INT : ${timeStr}`);
+        setTime(`INT : ${timeStr}`);
       }
     };
 
