@@ -6,36 +6,41 @@ import { NAVIGATION_LINKS, SITE_META } from '../data/content';
 export default function Navbar({ activePage, setActivePage, isDarkMode, setIsDarkMode }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [time, setTime] = useState('');
-  const [selectedCity, setSelectedCity] = useState('DHK');
+  const [isUtcMode, setIsUtcMode] = useState(false); // false: Dhaka 12h, true: UTC 24h
 
   useEffect(() => {
     const updateTime = () => {
-      const timeZones = {
-        DHK: 'Asia/Dhaka',
-        LON: 'Europe/London',
-        NYC: 'America/New_York',
-        TYO: 'Asia/Tokyo',
-      };
       const now = new Date();
-      const timeStr = new Intl.DateTimeFormat('en-US', {
-        timeZone: timeZones[selectedCity],
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: true,
-      }).format(now);
-      setTime(timeStr);
+      if (!isUtcMode) {
+        // Dhaka time 12-hour format
+        const timeStr = new Intl.DateTimeFormat('en-US', {
+          timeZone: 'Asia/Dhaka',
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: true,
+        }).format(now);
+        setTime(`DHAKA : ${timeStr}`);
+      } else {
+        // International UTC time 24-hour format
+        const timeStr = new Intl.DateTimeFormat('en-GB', {
+          timeZone: 'UTC',
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: false,
+        }).format(now);
+        setTime(`UTC / INT : ${timeStr}`);
+      }
     };
 
     updateTime();
     const interval = setInterval(updateTime, 1000);
     return () => clearInterval(interval);
-  }, [selectedCity]);
+  }, [isUtcMode]);
 
-  const toggleCity = () => {
-    const cities = ['DHK', 'LON', 'NYC', 'TYO'];
-    const nextIdx = (cities.indexOf(selectedCity) + 1) % cities.length;
-    setSelectedCity(cities[nextIdx]);
+  const toggleTimeMode = () => {
+    setIsUtcMode((prev) => !prev);
   };
 
   const handleNavClick = (pageId) => {
@@ -51,12 +56,12 @@ export default function Navbar({ activePage, setActivePage, isDarkMode, setIsDar
         {/* Left: Clock */}
         <div className="flex items-center space-x-3">
           <button
-            onClick={toggleCity}
-            className="flex items-center space-x-1.5 hover:text-black dark:hover:text-white transition-colors cursor-pointer text-neutral-600 dark:text-neutral-400"
-            title="Click to switch city timezone"
+            onClick={toggleTimeMode}
+            className="flex items-center space-x-1.5 hover:text-black dark:hover:text-white transition-colors cursor-pointer text-neutral-600 dark:text-neutral-400 group"
+            title="Click to toggle: Dhaka 12-hour / International 24-hour"
           >
-            <Clock className="w-3 h-3 text-[#B93826]" />
-            <span>{selectedCity} : {time || '12:00:00 PM'}</span>
+            <Clock className="w-3 h-3 text-[#B93826] group-hover:rotate-45 transition-transform" />
+            <span>{time}</span>
           </button>
           <span className="hidden sm:inline-block text-neutral-400">|</span>
           <span className="hidden sm:inline-block text-neutral-500">{SITE_META.season}</span>
