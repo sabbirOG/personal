@@ -28,24 +28,24 @@ export default function JournalPage({ onOpenLightbox }) {
   return (
     <div className="w-full">
       {/* 1. DIALOGUE Masthead Header Banner (Inspired by Reference 4) */}
-      <section className="border-b border-black/10 dark:border-white/10 px-4 md:px-12 py-8 bg-[#F4F1EB] dark:bg-[#151413] transition-colors">
-        <div className="max-w-5xl mx-auto text-center space-y-3">
-          <div className="text-[10px] font-mono tracking-[0.35em] uppercase text-neutral-500">
+      <section className="border-b border-black/10 dark:border-white/10 px-4 sm:px-6 md:px-12 py-6 sm:py-8 bg-[#F4F1EB] dark:bg-[#151413] transition-colors">
+        <div className="max-w-5xl mx-auto text-center space-y-2 sm:space-y-3">
+          <div className="text-[9px] sm:text-[10px] font-mono tracking-[0.25em] sm:tracking-[0.35em] uppercase text-neutral-500">
             DIGITAL CULTURE & CRITIQUE JOURNAL
           </div>
-          <h2 className="font-masthead text-5xl sm:text-7xl md:text-8xl font-normal tracking-wide text-[#1A1816] dark:text-[#FAF8F5]">
+          <h2 className="font-masthead text-4xl sm:text-6xl md:text-8xl font-normal tracking-wide text-[#1A1816] dark:text-[#FAF8F5]">
             D I A L O G U E
           </h2>
-          <div className="flex flex-wrap items-center justify-center gap-6 text-[10px] font-mono tracking-[0.25em] uppercase text-neutral-600 dark:text-neutral-400 pt-2 border-t border-black/10 dark:border-white/10 max-w-xl mx-auto">
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-[9px] sm:text-[10px] font-mono tracking-[0.2em] sm:tracking-[0.25em] uppercase text-neutral-600 dark:text-neutral-400 pt-2 border-t border-black/10 dark:border-white/10 max-w-xl mx-auto">
             <span>PORTFOLIO</span>
             <span>·</span>
             <span>ESSAY</span>
             <span>·</span>
-            <span>LIFESTYLE</span>
+            <span>SYSTEMS</span>
             <span>·</span>
             <span>ARCHIVE</span>
             <span>·</span>
-            <span>CRITIQUE</span>
+            <span>CODE</span>
           </div>
         </div>
       </section>
@@ -96,10 +96,10 @@ export default function JournalPage({ onOpenLightbox }) {
       {/* 3. Main Reading Article */}
       <article className="max-w-4xl mx-auto px-6 md:px-12 py-12 md:py-16 space-y-12">
         {/* Article Header */}
-        <header className="space-y-6 border-b border-black/10 dark:border-white/10 pb-10">
-          <div className="flex items-center justify-between text-xs font-mono tracking-[0.2em] uppercase text-neutral-500">
+        <header className="space-y-4 sm:space-y-6 border-b border-black/10 dark:border-white/10 pb-8 sm:pb-10">
+          <div className="flex flex-wrap items-center justify-between text-[10px] sm:text-xs font-mono tracking-[0.15em] sm:tracking-[0.2em] uppercase text-neutral-500 gap-2">
             <span className="text-[#B93826] font-semibold">{article.issue}</span>
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-2 sm:space-x-3">
               <Clock className="w-3.5 h-3.5" />
               <span>{article.readTime}</span>
               <span>·</span>
@@ -108,11 +108,11 @@ export default function JournalPage({ onOpenLightbox }) {
           </div>
 
           <div className="space-y-2">
-            <h1 className="font-masthead text-3xl sm:text-5xl md:text-6xl font-light text-[#1A1816] dark:text-[#FAF8F5] leading-[1.12]">
+            <h1 className="font-masthead text-2xl sm:text-4xl md:text-6xl font-light text-[#1A1816] dark:text-[#FAF8F5] leading-[1.15]">
               {article.title}
             </h1>
             {article.subHeading && (
-              <h2 className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 font-sans font-normal pt-1">
+              <h2 className="text-lg sm:text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 font-sans font-normal pt-1">
                 {article.subHeading}
               </h2>
             )}
@@ -170,11 +170,11 @@ export default function JournalPage({ onOpenLightbox }) {
         </div>
 
         {/* Pull Quote Callout */}
-        <div className="my-10 p-6 md:p-8 bg-[#F3EFE9] dark:bg-[#181716] border-l-4 border-[#B93826] space-y-2">
-          <div className="text-[10px] font-mono tracking-[0.25em] uppercase text-[#B93826]">
+        <div className="my-8 sm:my-10 p-5 sm:p-6 md:p-8 bg-[#F3EFE9] dark:bg-[#181716] border-l-4 border-[#B93826] space-y-2">
+          <div className="text-[9px] sm:text-[10px] font-mono tracking-[0.2em] sm:tracking-[0.25em] uppercase text-[#B93826]">
             EDITORIAL KEYNOTE
           </div>
-          <p className="font-editorial italic text-2xl md:text-3xl text-neutral-800 dark:text-neutral-200 leading-snug">
+          <p className="font-editorial italic text-xl sm:text-2xl md:text-3xl text-neutral-800 dark:text-neutral-200 leading-snug">
             "{article.pullQuote}"
           </p>
         </div>
@@ -224,10 +224,10 @@ export default function JournalPage({ onOpenLightbox }) {
         )}
 
         {/* Sign-off Colophon */}
-        <div className="pt-10 border-t border-black/10 dark:border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-neutral-500 gap-4">
-          <div className="flex items-center space-x-2">
-            <span className="w-2 h-2 rounded-full bg-[#C29B38]" />
-            <span>AUTHENTICATED BY SABBIR AHMED STUDIO & MONOGRAPH OFFICE</span>
+        <div className="pt-8 sm:pt-10 border-t border-black/10 dark:border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-neutral-500 gap-4">
+          <div className="flex items-center space-x-2 text-[10px] sm:text-xs text-center sm:text-left">
+            <span className="w-2 h-2 rounded-full bg-[#C29B38] shrink-0" />
+            <span>AUTHENTICATED BY SABBIR AHMED DEV REPOSITORY</span>
           </div>
 
           <div className="flex items-center space-x-3">

@@ -76,7 +76,7 @@ export default function DossierPage({ onOpenLightbox }) {
 
       {/* 2. Dossier Section Navigation Tabs */}
       <div className="border-b border-black/10 dark:border-white/10 px-4 md:px-12 py-3 bg-[#F4F1EB] dark:bg-[#161514] sticky top-0 z-30">
-        <div className="max-w-6xl mx-auto flex items-center justify-between overflow-x-auto gap-4">
+        <div className="max-w-6xl mx-auto flex items-center justify-start overflow-x-auto gap-2 sm:gap-4 no-scrollbar">
           <div className="flex space-x-2 md:space-x-4">
             {[
               { id: 'manifesto', label: 'THE MANIFESTO', icon: Feather },
@@ -89,7 +89,7 @@ export default function DossierPage({ onOpenLightbox }) {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-4 py-2 text-xs font-mono tracking-wider uppercase flex items-center space-x-2 rounded transition-all cursor-pointer whitespace-nowrap ${
+                  className={`px-3 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-xs font-mono tracking-wider uppercase flex items-center space-x-1.5 sm:space-x-2 rounded transition-all cursor-pointer whitespace-nowrap ${
                     activeTab === tab.id
                       ? 'bg-[#1A1816] text-white dark:bg-[#FAF8F5] dark:text-black font-semibold'
                       : 'text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white'

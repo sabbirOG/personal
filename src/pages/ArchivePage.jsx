@@ -16,59 +16,59 @@ export default function ArchivePage({ onOpenLightbox }) {
   return (
     <div className="w-full">
       {/* 1. Archive Header */}
-      <section className="border-b border-black/10 dark:border-white/10 px-4 md:px-12 py-10 bg-[#FAF8F5] dark:bg-[#121110]">
+      <section className="border-b border-black/10 dark:border-white/10 px-4 sm:px-6 md:px-12 py-8 sm:py-10 bg-[#FAF8F5] dark:bg-[#121110]">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-6">
-          <div className="space-y-3">
-            <div className="text-[10px] font-mono tracking-[0.35em] uppercase text-[#B93826]">
+          <div className="space-y-2 sm:space-y-3">
+            <div className="text-[10px] font-mono tracking-[0.25em] sm:tracking-[0.35em] uppercase text-[#B93826]">
               SOFTWARE PROJECTS & SYSTEMS REPOSITORY
             </div>
-            <h2 className="font-masthead text-4xl sm:text-6xl font-light text-[#1A1816] dark:text-[#FAF8F5]">
+            <h2 className="font-masthead text-3xl sm:text-5xl md:text-6xl font-light text-[#1A1816] dark:text-[#FAF8F5]">
               Projects & Engineering Archive
             </h2>
-            <p className="font-editorial italic text-lg text-neutral-600 dark:text-neutral-400 max-w-xl">
+            <p className="font-editorial italic text-base sm:text-lg text-neutral-600 dark:text-neutral-400 max-w-xl">
               Production web applications at Softrover, Computer Science research at UIU, developer toolsets, and open-source systems.
             </p>
           </div>
 
           {/* View Mode Controls */}
-          <div className="flex items-center space-x-2 border border-black/15 dark:border-white/15 p-1 rounded-sm bg-white/40 dark:bg-black/40 backdrop-blur-sm self-start md:self-end">
+          <div className="flex items-center space-x-1.5 sm:space-x-2 border border-black/15 dark:border-white/15 p-1 rounded-sm bg-white/40 dark:bg-black/40 backdrop-blur-sm self-start md:self-end">
             <button
               onClick={() => setViewMode('editorial')}
               title="Editorial Spread View"
-              className={`px-3 py-1.5 text-xs font-mono tracking-wider flex items-center space-x-1.5 rounded cursor-pointer transition-all ${
+              className={`px-2.5 sm:px-3 py-1.5 text-[11px] sm:text-xs font-mono tracking-wider flex items-center space-x-1.5 rounded cursor-pointer transition-all ${
                 viewMode === 'editorial'
                   ? 'bg-[#1A1816] text-white dark:bg-[#FAF8F5] dark:text-black font-semibold'
                   : 'text-neutral-500 hover:text-black dark:hover:text-white'
               }`}
             >
               <Columns className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">EDITORIAL</span>
+              <span>EDITORIAL</span>
             </button>
 
             <button
               onClick={() => setViewMode('grid')}
               title="Curator Grid View"
-              className={`px-3 py-1.5 text-xs font-mono tracking-wider flex items-center space-x-1.5 rounded cursor-pointer transition-all ${
+              className={`px-2.5 sm:px-3 py-1.5 text-[11px] sm:text-xs font-mono tracking-wider flex items-center space-x-1.5 rounded cursor-pointer transition-all ${
                 viewMode === 'grid'
                   ? 'bg-[#1A1816] text-white dark:bg-[#FAF8F5] dark:text-black font-semibold'
                   : 'text-neutral-500 hover:text-black dark:hover:text-white'
               }`}
             >
               <Grid className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">GRID</span>
+              <span>GRID</span>
             </button>
 
             <button
               onClick={() => setViewMode('contact-sheet')}
               title="35mm Filmstrip / Contact Sheet View"
-              className={`px-3 py-1.5 text-xs font-mono tracking-wider flex items-center space-x-1.5 rounded cursor-pointer transition-all ${
+              className={`px-2.5 sm:px-3 py-1.5 text-[11px] sm:text-xs font-mono tracking-wider flex items-center space-x-1.5 rounded cursor-pointer transition-all ${
                 viewMode === 'contact-sheet'
                   ? 'bg-[#1A1816] text-white dark:bg-[#FAF8F5] dark:text-black font-semibold'
                   : 'text-neutral-500 hover:text-black dark:hover:text-white'
               }`}
             >
               <Film className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">35MM FILM</span>
+              <span>35MM</span>
             </button>
           </div>
         </div>

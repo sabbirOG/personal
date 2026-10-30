@@ -96,19 +96,19 @@ export default function Navbar({ activePage, setActivePage, isDarkMode, setIsDar
       </div>
 
       {/* 2. Giant Editorial Masthead */}
-      <div className="text-center py-6 md:py-9 px-4 border-b border-black/10 dark:border-white/10 relative overflow-hidden">
-        <div className="text-[10px] md:text-xs font-mono uppercase tracking-[0.35em] text-neutral-500 dark:text-neutral-400 mb-2">
+      <div className="text-center py-5 sm:py-6 md:py-9 px-3 sm:px-4 border-b border-black/10 dark:border-white/10 relative overflow-hidden">
+        <div className="text-[9px] sm:text-[10px] md:text-xs font-mono uppercase tracking-[0.22em] sm:tracking-[0.35em] text-neutral-500 dark:text-neutral-400 mb-1.5 sm:mb-2">
           PORTFOLIO & TECHNICAL DISPATCHES OF
         </div>
         
         <h1
           onClick={() => handleNavClick('cover')}
-          className="font-masthead text-4xl sm:text-6xl md:text-8xl tracking-[-0.03em] font-normal cursor-pointer select-none hover:opacity-90 transition-opacity"
+          className="font-masthead text-3xl sm:text-5xl md:text-8xl tracking-tight sm:tracking-[-0.03em] font-normal cursor-pointer select-none hover:opacity-90 transition-opacity"
         >
           {SITE_META.name}
         </h1>
 
-        <div className="flex items-center justify-center flex-wrap gap-2 text-[10px] md:text-xs tracking-[0.25em] font-editorial italic text-neutral-600 dark:text-neutral-400 mt-2">
+        <div className="flex items-center justify-center flex-wrap gap-1.5 sm:gap-2 text-[9px] sm:text-[10px] md:text-xs tracking-[0.16em] sm:tracking-[0.25em] font-editorial italic text-neutral-600 dark:text-neutral-400 mt-1.5 sm:mt-2">
           <span>{SITE_META.subTitleMonogram}</span>
           <span>·</span>
           <span>SOFTROVER</span>

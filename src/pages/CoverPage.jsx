@@ -9,17 +9,17 @@ export default function CoverPage({ setActivePage, onOpenLightbox }) {
   return (
     <div className="w-full">
       {/* 1. Hero Feature Section */}
-      <section className="border-b border-black/10 dark:border-white/10 px-4 md:px-12 py-8 md:py-14">
+      <section className="border-b border-black/10 dark:border-white/10 px-4 sm:px-6 md:px-12 py-6 sm:py-8 md:py-14">
         <div className="max-w-7xl mx-auto">
           {/* Issue Meta Bar */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-black/10 dark:border-white/10 gap-3 text-[10px] font-mono uppercase tracking-[0.25em] text-neutral-500">
-            <div className="flex items-center space-x-3">
-              <span className="w-2 h-2 rounded-full bg-[#B93826] inline-block animate-pulse" />
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 sm:pb-6 border-b border-black/10 dark:border-white/10 gap-3 text-[10px] font-mono uppercase tracking-[0.2em] sm:tracking-[0.25em] text-neutral-500">
+            <div className="flex items-center space-x-2 sm:space-x-3">
+              <span className="w-2 h-2 rounded-full bg-[#B93826] inline-block animate-pulse shrink-0" />
               <span className="text-[#B93826] font-semibold">{currentStory.tag}</span>
               <span>—</span>
               <span>{currentStory.date}</span>
             </div>
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center justify-between sm:justify-start space-x-2 pt-1 sm:pt-0">
               <span>COVER STORY {activeStoryIdx + 1} OF {HERO_STORIES.length}</span>
               <div className="flex space-x-1 pl-3">
                 {HERO_STORIES.map((_, idx) => (
@@ -112,23 +112,23 @@ export default function CoverPage({ setActivePage, onOpenLightbox }) {
       </div>
 
       {/* 3. The Triptych Editorial Spread (Inspired by Reference 7) */}
-      <section className="px-4 md:px-12 py-16 border-b border-black/10 dark:border-white/10 bg-[#F4F1EB] dark:bg-[#161514] transition-colors">
-        <div className="max-w-7xl mx-auto space-y-10">
+      <section className="px-4 sm:px-6 md:px-12 py-10 sm:py-12 md:py-16 border-b border-black/10 dark:border-white/10 bg-[#F4F1EB] dark:bg-[#161514] transition-colors">
+        <div className="max-w-7xl mx-auto space-y-8 sm:space-y-10">
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto space-y-2">
-            <div className="text-[10px] font-mono tracking-[0.3em] uppercase text-[#B93826]">
+            <div className="text-[10px] font-mono tracking-[0.25em] sm:tracking-[0.3em] uppercase text-[#B93826]">
               ENGINEERING PERSPECTIVES
             </div>
-            <h3 className="font-masthead text-3xl md:text-4xl font-light tracking-tight">
+            <h3 className="font-masthead text-2xl sm:text-3xl md:text-4xl font-light tracking-tight">
               Production, Academia & Systems
             </h3>
-            <p className="font-editorial text-neutral-600 dark:text-neutral-400 italic text-base">
+            <p className="font-editorial text-neutral-600 dark:text-neutral-400 italic text-sm sm:text-base">
               A continuous study across production engineering at Softrover, computer science at UIU, and developer craft.
             </p>
           </div>
 
           {/* The Triptych Display Container */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
             {TRIPTYCH_SPREAD.map((panel, idx) => (
               <div
                 key={idx}
@@ -182,18 +182,18 @@ export default function CoverPage({ setActivePage, onOpenLightbox }) {
       </section>
 
       {/* 4. Editorial Spread: Youth, Dialogue & Society (Inspired by Reference 2) */}
-      <section className="px-4 md:px-12 py-16 border-b border-black/10 dark:border-white/10">
+      <section className="px-4 sm:px-6 md:px-12 py-10 sm:py-12 md:py-16 border-b border-black/10 dark:border-white/10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            {/* Left text column with Thai script inspired directly by reference 2 */}
-            <div className="lg:col-span-5 space-y-6">
-              <div className="text-[10px] font-mono tracking-[0.3em] uppercase text-[#B93826]">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
+            {/* Left text column */}
+            <div className="lg:col-span-5 space-y-4 sm:space-y-6">
+              <div className="text-[10px] font-mono tracking-[0.25em] sm:tracking-[0.3em] uppercase text-[#B93826]">
                 SOFTWARE ENGINEERING & CRAFT
               </div>
-              <h3 className="font-masthead text-3xl sm:text-4xl font-light leading-tight">
+              <h3 className="font-masthead text-2xl sm:text-3xl md:text-4xl font-light leading-tight">
                 "Good software is invisible in its complexity and enduring in its craft."
               </h3>
-              <p className="font-editorial italic text-xl text-neutral-700 dark:text-neutral-300">
+              <p className="font-editorial italic text-lg sm:text-xl text-neutral-700 dark:text-neutral-300">
                 Bridging foundational computer science with real-world production velocity.
               </p>
 
@@ -248,41 +248,41 @@ export default function CoverPage({ setActivePage, onOpenLightbox }) {
       </section>
 
       {/* 5. Metrics & Engineering Focus Band */}
-      <section className="px-4 md:px-12 py-14 bg-[#1A1816] text-[#FAF8F5] border-b border-black/20">
+      <section className="px-4 sm:px-6 md:px-12 py-10 sm:py-12 md:py-14 bg-[#1A1816] text-[#FAF8F5] border-b border-black/20">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
             <div className="space-y-1">
-              <div className="font-masthead text-3xl sm:text-4xl md:text-5xl font-light text-[#C29B38]">
+              <div className="font-masthead text-2xl sm:text-3xl md:text-5xl font-light text-[#C29B38]">
                 SOFTROVER
               </div>
-              <div className="text-[10px] font-mono tracking-[0.25em] uppercase text-neutral-400">
+              <div className="text-[9px] sm:text-[10px] font-mono tracking-[0.2em] sm:tracking-[0.25em] uppercase text-neutral-400">
                 Software Engineer
               </div>
             </div>
 
             <div className="space-y-1">
-              <div className="font-masthead text-3xl sm:text-4xl md:text-5xl font-light text-[#C29B38]">
+              <div className="font-masthead text-2xl sm:text-3xl md:text-5xl font-light text-[#C29B38]">
                 UIU
               </div>
-              <div className="text-[10px] font-mono tracking-[0.25em] uppercase text-neutral-400">
+              <div className="text-[9px] sm:text-[10px] font-mono tracking-[0.2em] sm:tracking-[0.25em] uppercase text-neutral-400">
                 Computer Science
               </div>
             </div>
 
             <div className="space-y-1">
-              <div className="font-masthead text-3xl sm:text-4xl md:text-5xl font-light text-[#C29B38]">
+              <div className="font-masthead text-2xl sm:text-3xl md:text-5xl font-light text-[#C29B38]">
                 FULL-STACK
               </div>
-              <div className="text-[10px] font-mono tracking-[0.25em] uppercase text-neutral-400">
+              <div className="text-[9px] sm:text-[10px] font-mono tracking-[0.2em] sm:tracking-[0.25em] uppercase text-neutral-400">
                 Web & Cloud Systems
               </div>
             </div>
 
             <div className="space-y-1">
-              <div className="font-masthead text-3xl sm:text-4xl md:text-5xl font-light text-[#C29B38]">
+              <div className="font-masthead text-2xl sm:text-3xl md:text-5xl font-light text-[#C29B38]">
                 DHAKA
               </div>
-              <div className="text-[10px] font-mono tracking-[0.25em] uppercase text-neutral-400">
+              <div className="text-[9px] sm:text-[10px] font-mono tracking-[0.2em] sm:tracking-[0.25em] uppercase text-neutral-400">
                 Base Coordinates
               </div>
             </div>
@@ -293,20 +293,20 @@ export default function CoverPage({ setActivePage, onOpenLightbox }) {
       {/* 6. Selected Dialogue Inquiries & CTA to Contact */}
       <section className="px-4 md:px-12 py-16 text-center max-w-4xl mx-auto space-y-6">
         <div className="text-[10px] font-mono tracking-[0.3em] uppercase text-[#B93826]">
-          DIRECT INQUIRIES & STUDIO
+          ENGINEERING INQUIRIES & COLLABORATION
         </div>
         <h3 className="font-masthead text-3xl sm:text-5xl font-light">
-          "Quietude is the highest form of presence."
+          "Simplicity is the prerequisite for reliability."
         </h3>
         <p className="font-editorial italic text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
-          For design collaborations, architectural advisory, or direct correspondence with the studio.
+          For full-stack engineering collaborations, technical consultation, or direct correspondence with Sabbir Ahmed.
         </p>
         <div className="pt-4">
           <button
             onClick={() => setActivePage('correspondence')}
             className="px-8 py-3.5 bg-[#1A1816] text-[#FAF8F5] dark:bg-[#FAF8F5] dark:text-[#1A1816] hover:bg-[#B93826] dark:hover:bg-[#B93826] dark:hover:text-white transition-all text-xs font-mono tracking-[0.25em] uppercase cursor-pointer"
           >
-            OPEN DIRECT INQUIRIES
+            GET IN TOUCH
           </button>
         </div>
       </section>
