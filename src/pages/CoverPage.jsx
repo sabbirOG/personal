@@ -70,62 +70,26 @@ export default function CoverPage({ setActivePage, onOpenLightbox }) {
                   <span>READ ARTICLE</span>
                   <MoveRight className="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" />
                 </button>
-
-                <button
-                  onClick={() =>
-                    onOpenLightbox({
-                      id: currentStory.id,
-                      title: currentStory.title,
-                      image: currentStory.image,
-                      category: currentStory.tag,
-                      curatorNote: currentStory.quote,
-                      location: "Bangkok & Private Archives",
-                    })
-                  }
-                  className="px-5 py-3 border border-black/15 dark:border-white/20 hover:border-black dark:hover:border-white text-xs font-mono tracking-[0.2em] uppercase flex items-center space-x-2 rounded-sm transition-colors cursor-pointer text-neutral-700 dark:text-neutral-300"
-                >
-                  <Eye className="w-3.5 h-3.5" />
-                  <span>VIEW ARCHIVAL PLATE</span>
-                </button>
               </div>
 
-              {/* Photo attribution */}
+              {/* Attribution */}
               <div className="text-[10px] font-mono text-neutral-400 pt-2 tracking-wider">
-                PHOTO: {currentStory.photographer}
+                FEATURE: {currentStory.photographer}
               </div>
             </div>
 
             {/* Right Column: Hero Framing Image */}
             <div className="lg:col-span-7">
-              <div
-                onClick={() =>
-                  onOpenLightbox({
-                    id: currentStory.id,
-                    title: currentStory.title,
-                    image: currentStory.image,
-                    category: currentStory.tag,
-                    curatorNote: currentStory.quote,
-                    location: "Bangkok & Private Archives",
-                  })
-                }
-                className="editorial-img-wrap group cursor-pointer border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 relative aspect-[16/11] md:aspect-[16/10] overflow-hidden"
-              >
+              <div className="editorial-img-wrap border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 relative aspect-[16/11] md:aspect-[16/10] overflow-hidden">
                 <img
                   src={currentStory.image}
                   alt={currentStory.alt}
-                  className="w-full h-full object-cover object-center filter contrast-[1.03] group-hover:scale-105 transition-transform duration-1000"
+                  className="w-full h-full object-cover object-center filter contrast-[1.03]"
                 />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <div className="text-white text-xs font-mono tracking-widest flex items-center space-x-2">
-                    <Eye className="w-4 h-4 text-[#C29B38]" />
-                    <span>CLICK TO ENLARGE IN ARCHIVAL LIGHTBOX</span>
-                  </div>
-                </div>
 
                 {/* Floating Plate Stamp */}
                 <div className="absolute top-4 right-4 bg-[#FAF8F5]/90 dark:bg-[#121110]/90 backdrop-blur-sm border border-black/10 dark:border-white/10 px-3 py-1 text-[9px] font-mono tracking-widest uppercase">
-                  PLATE REF. 0{activeStoryIdx + 1}
+                  FEATURE 0{activeStoryIdx + 1}
                 </div>
               </div>
             </div>
